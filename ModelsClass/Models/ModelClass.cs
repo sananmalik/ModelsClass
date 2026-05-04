@@ -4,6 +4,7 @@ namespace ModelsClass.Models
 {
     public class ModelClass
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Degree { get; set; }
         public string University { get; set; }

@@ -1,7 +1,10 @@
+using ModelsClass.Models.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<StudentRepository>();
 
 var app = builder.Build();
 
