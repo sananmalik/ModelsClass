@@ -12,7 +12,7 @@ namespace ModelsClass.Controllers
         {
 
 
-            var  student = new List<ModelClass>
+            var   student = new List<ModelClass>
             {
                 new ModelClass
                 {
@@ -41,8 +41,8 @@ namespace ModelsClass.Controllers
                 } 
             };
 
-            ViewData["_students"] = student;
-            return View();
+            //ViewData["_students"] = student;
+            return View(student);
 
         }
         //public HomeController(StudentRepository studentrepository)

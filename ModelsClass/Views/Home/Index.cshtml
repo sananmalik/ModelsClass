@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<ModelsClass.Models.ModelClass>
+@{
     ViewData["Title"] = "Home Page";
     var students = ViewData["_students"] as List<ModelClass>;
 }
@@ -10,7 +11,7 @@
 
 
  @{
-    foreach (var std in students)
+    foreach (var std in Model)
     {
         <div>
             <h2>@std.Name</h2>
