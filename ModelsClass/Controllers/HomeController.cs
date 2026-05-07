@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ModelsClass.Models;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace ModelsClass.Controllers
 {
@@ -44,6 +45,10 @@ namespace ModelsClass.Controllers
             //ViewData["_students"] = student;
             return View(student);
 
+        }
+        public IActionResult Contact()
+        {
+            return View();
         }
         //public HomeController(StudentRepository studentrepository)
         //{

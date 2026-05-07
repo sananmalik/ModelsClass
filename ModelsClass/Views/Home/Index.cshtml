@@ -1,4 +1,6 @@
-﻿@model IEnumerable<ModelClass>
+﻿
+@model IEnumerable<ModelClass>
+
 @{
     ViewData["Title"] = "Home Page";
     var students = ViewData["_students"] as List<ModelClass>;
@@ -10,7 +12,7 @@
 </div>
 
 
- @{
+@*  @{
     foreach (var std in Model)
     {
         <div>
@@ -21,4 +23,8 @@
             <p>Graduation Month: @std.GraduationMonth</p>
         </div>
     }
-} 
+} *@ 
+
+<a asp-controller = "Home" asp-action = "Contact">
+    contact link 
+</a>
